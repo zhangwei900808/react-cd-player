@@ -1,5 +1,6 @@
 {
   "name": "react-cd-player",
+  "homepage" : "http://zhangwei900808.github.io/react-cd-player",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
