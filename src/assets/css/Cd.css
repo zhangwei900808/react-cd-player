@@ -11,9 +11,6 @@
     -o-animation: rotate 20s linear infinite;
     animation: rotate 20s linear infinite; }
   .cd-container .cd-cover {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative; }
     .cd-container .cd-cover img.cover {
       width: 100%;
