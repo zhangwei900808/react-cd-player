@@ -1,5 +1,8 @@
 # React-CD-Player
 
+![](./assets/images/intro1.png)
+![](./assets/images/intro2.png)
+
 ## Installation
 
 ```js
