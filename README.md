@@ -1,13 +1,13 @@
 # React-CD-Player
 
-##Installation
+## Installation
 
 ```js
 npm install --save react-cd-player
 yarn add react-cd-player
 ```
 
-##Usage
+## Usage
 
 ```js
 import React, { Component } from 'react';
@@ -67,13 +67,14 @@ export default App;
     }]
 ```
 
-##methods & events
+## methods & events
 
 ### onPlay
 
 ### onPause
 
 ## License
+
 [pixiv]: https://github.com/LoveLiveSunshine/pixiv.moe
 [LoveLiveSunshine]: https://github.com/LoveLiveSunshine/LoveLiveSunshine.github.io
 
