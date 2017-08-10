@@ -1,0 +1,112 @@
+.cd-player-container{
+        display: block;
+        text-align: center;
+        .process-outer{
+            height: 3px;
+            width: 40%;
+            margin: 0 auto;
+            margin-top: 30px;
+            background: #ccc;
+            cursor: pointer;
+        }
+        .title{
+            position: relative;
+            margin-top: 20px;
+            color: #000;
+            h1.name{
+                font-size: 2.4em;
+                &:before{
+                    content:'\300C   '
+                }
+                &:after{
+                    content:' \300D'
+                }
+            }
+            h2.sub-title{
+                margin-top: 10px;
+                font-size: 1.6em;
+                color: #666;
+            }
+        }
+        .control-buttons{
+            display: inline-block;
+            overflow: hidden;
+            .fast-rewind-outer{
+                float: left;
+                margin-top: 260px;
+                .fast-rewind-icon{
+                    width:100px;
+                    height:100px;
+                    color: #fff;
+                    background: #ccc;
+                    border-radius: 50%;
+                    &:hover{
+                        background:#3aa8bd;
+                    }
+                }
+            }
+            .cd-outer{
+                float: left;
+            }
+            .fast-forward-outer{
+                float: left;
+                margin-top: 260px;
+                .fast-forward-icon{
+                    width:100px;
+                    height:100px;
+                    color: #fff;
+                    background: #ccc;
+                    border-radius: 50%;
+                    &:hover{
+                        background:#3aa8bd;
+                    }
+                }
+            }
+        }    
+}
+
+@media screen and (max-width: 700px){
+    .cd-player-container{
+        .process-outer{
+            width: 80%;
+        }
+        .title{
+            h1.name{
+                font-size: 2em;
+            }
+            h2.sub-title{
+                font-size: 1em;
+            }
+        }
+        .control-buttons{
+            .fast-rewind-outer{
+                margin-top: 280px;
+                .fast-rewind-icon{
+                    width:60px;
+                    height:60px;
+                    color: #fff;
+                    background: #ccc;
+                    border-radius: 50%;
+                    margin-right: 60px;
+                    &:hover{
+                        background:#ccc;
+                    }
+                }
+            }
+
+            .fast-forward-outer{
+                margin-top: 280px;
+                .fast-forward-icon{
+                    width:60px;
+                    height:60px;
+                    color: #fff;
+                    background: #ccc;
+                    border-radius: 50%;
+                    &:hover{
+                        background:#ccc;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.cd-player-container {
+  display: block;
+  text-align: center; }
+  .cd-player-container .process-outer {
+    height: 3px;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background: #ccc;
+    cursor: pointer; }
+  .cd-player-container .title {
+    position: relative;
+    margin-top: 20px;
+    color: #000; }
+    .cd-player-container .title h1.name {
+      font-size: 2.4em; }
+      .cd-player-container .title h1.name:before {
+        content: '\300C   '; }
+      .cd-player-container .title h1.name:after {
+        content: ' \300D'; }
+    .cd-player-container .title h2.sub-title {
+      margin-top: 10px;
+      font-size: 1.6em;
+      color: #666; }
+  .cd-player-container .control-buttons {
+    display: inline-block;
+    overflow: hidden; }
+    .cd-player-container .control-buttons .fast-rewind-outer {
+      float: left;
+      margin-top: 260px; }
+      .cd-player-container .control-buttons .fast-rewind-outer .fast-rewind-icon {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        background: #ccc;
+        border-radius: 50%; }
+        .cd-player-container .control-buttons .fast-rewind-outer .fast-rewind-icon:hover {
+          background: #3aa8bd; }
+    .cd-player-container .control-buttons .cd-outer {
+      float: left; }
+    .cd-player-container .control-buttons .fast-forward-outer {
+      float: left;
+      margin-top: 260px; }
+      .cd-player-container .control-buttons .fast-forward-outer .fast-forward-icon {
+        width: 100px;
+        height: 100px;
+        color: #fff;
+        background: #ccc;
+        border-radius: 50%; }
+        .cd-player-container .control-buttons .fast-forward-outer .fast-forward-icon:hover {
+          background: #3aa8bd; }
+
+@media screen and (max-width: 700px) {
+  .cd-player-container .process-outer {
+    width: 80%; }
+  .cd-player-container .title h1.name {
+    font-size: 2em; }
+  .cd-player-container .title h2.sub-title {
+    font-size: 1em; }
+  .cd-player-container .control-buttons .fast-rewind-outer {
+    margin-top: 280px; }
+    .cd-player-container .control-buttons .fast-rewind-outer .fast-rewind-icon {
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      background: #ccc;
+      border-radius: 50%;
+      margin-right: 60px; }
+      .cd-player-container .control-buttons .fast-rewind-outer .fast-rewind-icon:hover {
+        background: #ccc; }
+  .cd-player-container .control-buttons .fast-forward-outer {
+    margin-top: 280px; }
+    .cd-player-container .control-buttons .fast-forward-outer .fast-forward-icon {
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      background: #ccc;
+      border-radius: 50%; }
+      .cd-player-container .control-buttons .fast-forward-outer .fast-forward-icon:hover {
+        background: #ccc; } }

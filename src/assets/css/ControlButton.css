@@ -1,0 +1,40 @@
+.control-button-container .control-buttons .fast-rewind-icon {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #ccc;
+  border-radius: 50%; }
+  .control-button-container .control-buttons .fast-rewind-icon:hover {
+    background: #3aa8bd; }
+
+.control-button-container .control-buttons .fast-forward-icon {
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  background: #ccc;
+  border-radius: 50%; }
+  .control-button-container .control-buttons .fast-forward-icon:hover {
+    background: #3aa8bd; }
+
+@media screen and (max-width: 700px) {
+  .control-button-container .control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .control-button-container .control-buttons .fast-rewind-icon {
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      background: #ccc;
+      border-radius: 50%;
+      margin-right: 60px; }
+      .control-button-container .control-buttons .fast-rewind-icon:hover {
+        background: #ccc; }
+    .control-button-container .control-buttons .fast-forward-icon {
+      width: 60px;
+      height: 60px;
+      color: #fff;
+      background: #ccc;
+      border-radius: 50%; }
+      .control-button-container .control-buttons .fast-forward-icon:hover {
+        background: #ccc; } }

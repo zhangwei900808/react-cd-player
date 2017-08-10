@@ -1,0 +1,154 @@
+.cd-container{
+    width:  400px;
+    border-radius: 50%;
+    .playing{
+        img.cover{
+            -webkit-transition-property: -webkit-transform;
+            -webkit-transition-duration: 1s;
+            -moz-transition-property: -moz-transform;
+            -moz-transition-duration: 1s;
+            -webkit-animation: rotate 20s linear infinite;
+            -moz-animation: rotate 20s linear infinite;
+            -o-animation: rotate 20s linear infinite;
+            animation: rotate 20s linear infinite;
+        }
+    }
+    .cd-cover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img.cover{
+            width:100%;
+            border-radius: 50%;
+            border: 10px solid rgba(0,0,0,.1);
+            z-index: 1;
+
+        }
+        .control-center{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            margin-left: -50px;
+            background: #fff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px hsla(0,0%,97%,.53), inset 0 0 5px #333;
+            z-index: 2;
+            .play-icon {
+                width:80px;
+                height:80px;
+                color: #ccc;
+                /* move the mouse over to enlarge the effect */
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    color: #3aa8bd;
+                    -webkit-transform: scale(1.2);
+                    -moz-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+            }
+            .pause-icon{
+                width:80px;
+                height:80px;
+                color: #ccc;
+                -webkit-transition: all 0.2s ease-in-out;
+                -moz-transition: all 0.2s ease-in-out;
+                -o-transition: all 0.2s ease-in-out;
+                -ms-transition: all 0.2s ease-in-out;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    color: #3aa8bd;
+                    -webkit-transform: scale(1.2);
+                    -moz-transform: scale(1.2);
+                    -o-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .cd-container{
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -200px;
+        margin-left: -150px;
+        .cd-cover{
+            img.cover{
+                width: 250px!important;
+                height: 250px!important;
+                border: 10px solid rgba(0,0,0,.1);
+            }
+            .control-center{
+                width: 60px;
+                height: 60px;
+                margin-top: -30px;
+                margin-left: -30px;
+                box-shadow: 0 0 0 10px hsla(0,0%,97%,.53), inset 0 0 5px #333;
+                .play-icon{
+                    width:50px;
+                    height:50px;
+                }
+                .pause-icon{
+                    width:50px;
+                    height:50px;
+                }
+            }
+        }
+    }
+}
+
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(0deg)
+    }
+    to {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(359deg)
+    }
+}
