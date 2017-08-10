@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './assets/images/logo.svg';
 import './assets/css/App.css';
 
-import CdPlayer from './containers/CdPlayer'
+import CdPlayer from './containers/ReactCdPlayer'
 
 class App extends Component {
   onPlay=()=>{

@@ -15,7 +15,7 @@ yarn add react-cd-player
 import React, { Component } from 'react';
 import './assets/css/App.css';
 
-import CdPlayer from './containers/CdPlayer'
+import CdPlayer from 'react-cd-player'
 
 class App extends Component {
   onPlay=()=>{

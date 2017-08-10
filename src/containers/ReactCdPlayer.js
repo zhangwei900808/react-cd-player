@@ -8,7 +8,7 @@ import { LinearProgress } from 'material-ui/Progress';
 
 import Cd from '../components/Cd'
 
-class CdPlayer extends React.Component{
+class ReactCdPlayer extends React.Component{
     constructor(props){
         super(props)
         this.state={
@@ -165,9 +165,9 @@ class CdPlayer extends React.Component{
 
 }
 
-CdPlayer.propTypes={
+ReactCdPlayer.propTypes={
     musicList:PropTypes.array.isRequired,
     onPlay:PropTypes.func
 }
 
-export default CdPlayer
+export default ReactCdPlayer
