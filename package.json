@@ -3,6 +3,7 @@
   "homepage": "http://zhangwei900808.github.io/react-cd-player",
   "version": "0.1.0",
   "private": true,
+  "main": "src/containers/CdPlayer.js",
   "dependencies": {
     "classnames": "^2.2.5",
     "material-ui": "next",
