@@ -1,7 +1,6 @@
 # React-CD-Player
 
 ![](http://cdn.awbeci.com/images/awbeci-xyz/blog/intro1.png)
-![](http://cdn.awbeci.com/images/awbeci-xyz/blog/intro2.png)
 
 ## Installation
 
