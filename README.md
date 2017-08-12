@@ -75,10 +75,12 @@ export default App;
 
 ### onPause
 
-## License
+## reference
 
 [pixiv](https://github.com/LoveLiveSunshine/pixiv.moe)
+
 [LoveLiveSunshine](https://github.com/LoveLiveSunshine/LoveLiveSunshine.github.io)
 
 [material-ui](https://github.com/callemall/material-ui)
+
 [material-ui-icons](https://github.com/MODX-Club/material-ui-icons)
