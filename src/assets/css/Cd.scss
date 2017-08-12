@@ -20,7 +20,7 @@
             border-radius: 50%;
             border: 10px solid rgba(0,0,0,.1);
             z-index: 1;
-
+            box-sizing: border-box;
         }
         .control-center{
             position: absolute;

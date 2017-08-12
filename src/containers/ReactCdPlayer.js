@@ -3,8 +3,10 @@ import cdPlayer from '../assets/css/CdPlayer.css'
 import React from 'react'
 import PropTypes from 'prop-types'
 import FastForward from 'material-ui-icons/FastForward';
+import Grid from 'material-ui/Grid';
 import FastRewind from 'material-ui-icons/FastRewind';
 import { LinearProgress } from 'material-ui/Progress';
+import cn from 'classnames'
 
 import Cd from '../components/Cd'
 
@@ -23,8 +25,18 @@ class ReactCdPlayer extends React.Component{
             relist :['fa-random', 'fa-refresh', 'fa-retweet'],
             retitle : ['Random', 'Cycle', 'Order'],
             completed: 0,
-            progress:null
+            progress:null,
+            fastTop:0
         }
+        this.onTimeUpdate = this.onTimeUpdate.bind(this);
+        this.onProgress = this.onProgress.bind(this);
+    }
+    resizeListener=()=>{
+        let cdPlayerRef = this.cdPlayerRef;
+        
+        this.fastRewind.style.top = String(`${cdPlayerRef.offsetTop+260}px`);
+        this.fastForward.style.top = String(`${cdPlayerRef.offsetTop+260}px`);
+        this.bottomBarRef.style.top = String(`${cdPlayerRef.offsetTop+320}px`);
     }
     componentDidMount() {
         if (localStorage.currentMusic)
@@ -42,6 +54,8 @@ class ReactCdPlayer extends React.Component{
         }
         this.loadMusic(this.state.currentMusic);
         this.state.audio.addEventListener('timeupdate',this.onTimeUpdate)
+        window.addEventListener('resize', this.resizeListener);
+        this.resizeListener();
     }
     onTimeUpdate=()=>{
         console.log('ontimeupdate')
@@ -140,25 +154,37 @@ class ReactCdPlayer extends React.Component{
     render(){
         return(
             <section className='cd-player-container'>
-                    <section className="control-buttons">
-                        <section className='fast-rewind-outer'>
-                            <FastRewind className='fast-rewind-icon' onClick={this.onFastRewind}/>
-                        </section>
-                        <section className="cd-outer">
-                            <Cd {...this.state} onPlay={this.onPlay} onPause={this.onPause}/>
-                        </section>
-                        <section className='fast-forward-outer'>
-                            <FastForward className='fast-forward-icon' onClick={this.onFastForward}/>
-                        </section>
-                    </section>
-                    <section className='title'>
-                        <h1 className='name'>{this.state.currentMusicItem?this.state.currentMusicItem.title:''}</h1>
-                        <h2 className="sub-title">{this.state.currentMusicItem?this.state.currentMusicItem.artist:''}</h2>
-                    </section>
-                    <audio ref={ref=>this.state.audio = ref} id="music" src={this.state.currentMusicItem?this.state.currentMusicItem.mp3:''}></audio>
-                    <section className="process-outer" ref={ref=>this.state.progress = ref} >
-                        <LinearProgress color="accent" mode="determinate" value={this.state.completed} onClick={this.onProgress}/>
-                    </section>
+                    <Grid container  spacing={0}>
+                        <Grid item xs={12}>
+                            <Grid
+                                container
+                                align={'center'}
+                                direction={'column'}
+                                justify={'center'} >
+                                <section className="control-buttons">
+                                    <section ref={ref=>this.fastRewind = ref} className='fast-rewind-outer'>
+                                        <FastRewind className='fast-rewind-icon' onClick={this.onFastRewind}/>
+                                    </section>
+                                    <section className="cd-outer">
+                                        <Cd cdContainerRef={ref=>this.cdPlayerRef = ref} {...this.state} onPlay={this.onPlay} onPause={this.onPause}/>
+                                    </section>
+                                    <section ref={ref=>this.fastForward = ref} className='fast-forward-outer fast'>
+                                        <FastForward className='fast-forward-icon' onClick={this.onFastForward}/>
+                                    </section>
+                                    </section>
+                                    <section ref={ref=>this.bottomBarRef = ref} className="bottom-bar">
+                                        <section className='title'>
+                                            <h1 className='name'>{this.state.currentMusicItem?this.state.currentMusicItem.title:''}</h1>
+                                            <h2 className="sub-title">{this.state.currentMusicItem?this.state.currentMusicItem.artist:''}</h2>
+                                        </section>
+                                        <audio ref={ref=>this.state.audio = ref} id="music" src={this.state.currentMusicItem?this.state.currentMusicItem.mp3:''}></audio>
+                                        <section className="process-outer" ref={ref=>this.state.progress = ref} >
+                                            <LinearProgress color="accent" mode="determinate" value={this.state.completed} onClick={this.onProgress}/>
+                                        </section>
+                                    </section>
+                                </Grid>
+                            </Grid>
+                        </Grid>                    
             </section>
         )
     }

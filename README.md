@@ -13,7 +13,6 @@ yarn add react-cd-player
 
 ```js
 import React, { Component } from 'react';
-import './assets/css/App.css';
 
 import CdPlayer from 'react-cd-player'
 
@@ -54,6 +53,7 @@ class App extends Component {
 
 export default App;
 
+
 ```
 ## property
 
@@ -77,8 +77,8 @@ export default App;
 
 ## License
 
-[pixiv]: https://github.com/LoveLiveSunshine/pixiv.moe
-[LoveLiveSunshine]: https://github.com/LoveLiveSunshine/LoveLiveSunshine.github.io
+[pixiv](https://github.com/LoveLiveSunshine/pixiv.moe)
+[LoveLiveSunshine](https://github.com/LoveLiveSunshine/LoveLiveSunshine.github.io)
 
-[material-ui]: https://github.com/callemall/material-ui
-[material-ui-icons]: https://github.com/MODX-Club/material-ui-icons
+[material-ui](https://github.com/callemall/material-ui)
+[material-ui-icons](https://github.com/MODX-Club/material-ui-icons)

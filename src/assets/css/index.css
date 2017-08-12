@@ -5,8 +5,8 @@ body {
   font-family: sans-serif;
 }
 #root{
-    display: table;
+    /* display: table;
     width: 100%;
+    text-align: center; */
     height: 100%;
-    text-align: center;
 }

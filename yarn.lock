@@ -39,7 +39,7 @@ acorn@^3.0.4:
   version "3.3.0"
   resolved "http://r.cnpmjs.org/acorn/download/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
-acorn@^4.0.3, acorn@^4.0.4:
+acorn@^4.0.1, acorn@^4.0.3, acorn@^4.0.4:
   version "4.0.13"
   resolved "http://r.cnpmjs.org/acorn/download/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
@@ -292,7 +292,7 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "http://r.cnpmjs.org/asynckit/download/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-autoprefixer@7.1.2:
+autoprefixer@7.1.2, autoprefixer@^7.1.1:
   version "7.1.2"
   resolved "http://r.cnpmjs.org/autoprefixer/download/autoprefixer-7.1.2.tgz#fbeaf07d48fd878e0682bf7cbeeade728adb2b18"
   dependencies:
@@ -328,6 +328,27 @@ axobject-query@^0.1.0:
   dependencies:
     ast-types-flow "0.0.7"
 
+babel-cli@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-cli/download/babel-cli-6.24.1.tgz#207cd705bba61489b2ea41b5312341cf6aca2283"
+  dependencies:
+    babel-core "^6.24.1"
+    babel-polyfill "^6.23.0"
+    babel-register "^6.24.1"
+    babel-runtime "^6.22.0"
+    commander "^2.8.1"
+    convert-source-map "^1.1.0"
+    fs-readdir-recursive "^1.0.0"
+    glob "^7.0.0"
+    lodash "^4.2.0"
+    output-file-sync "^1.1.0"
+    path-is-absolute "^1.0.0"
+    slash "^1.0.0"
+    source-map "^0.5.0"
+    v8flags "^2.0.10"
+  optionalDependencies:
+    chokidar "^1.6.1"
+
 babel-code-frame@6.22.0, babel-code-frame@^6.11.0, babel-code-frame@^6.22.0:
   version "6.22.0"
   resolved "http://r.cnpmjs.org/babel-code-frame/download/babel-code-frame-6.22.0.tgz#027620bee567a88c32561574e7fd0801d33118e4"
@@ -336,9 +357,9 @@ babel-code-frame@6.22.0, babel-code-frame@^6.11.0, babel-code-frame@^6.22.0:
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-babel-core@6.25.0, babel-core@^6.0.0, babel-core@^6.24.1:
+babel-core@6.25.0, babel-core@^6.0.0, babel-core@^6.24.1, babel-core@^6.25.0:
   version "6.25.0"
-  resolved "http://r.cnpmjs.org/babel-core/download/babel-core-6.25.0.tgz#7dd42b0463c742e9d5296deb3ec67a9322dad729"
+  resolved "http://registry.npm.taobao.org/babel-core/download/babel-core-6.25.0.tgz#7dd42b0463c742e9d5296deb3ec67a9322dad729"
   dependencies:
     babel-code-frame "^6.22.0"
     babel-generator "^6.25.0"
@@ -382,6 +403,14 @@ babel-generator@^6.18.0, babel-generator@^6.25.0:
     source-map "^0.5.0"
     trim-right "^1.0.1"
 
+babel-helper-bindify-decorators@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-helper-bindify-decorators/download/babel-helper-bindify-decorators-6.24.1.tgz#14c19e5f142d7b47f19a52431e52b1ccbc40a330"
+  dependencies:
+    babel-runtime "^6.22.0"
+    babel-traverse "^6.24.1"
+    babel-types "^6.24.1"
+
 babel-helper-builder-binary-assignment-operator-visitor@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-helper-builder-binary-assignment-operator-visitor/download/babel-helper-builder-binary-assignment-operator-visitor-6.24.1.tgz#cce4517ada356f4220bcae8a02c2b346f9a56664"
@@ -420,6 +449,15 @@ babel-helper-explode-assignable-expression@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-helper-explode-assignable-expression/download/babel-helper-explode-assignable-expression-6.24.1.tgz#f25b82cf7dc10433c55f70592d5746400ac22caa"
   dependencies:
+    babel-runtime "^6.22.0"
+    babel-traverse "^6.24.1"
+    babel-types "^6.24.1"
+
+babel-helper-explode-class@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-helper-explode-class/download/babel-helper-explode-class-6.24.1.tgz#7dc2a3910dee007056e1e31d640ced3d54eaa9eb"
+  dependencies:
+    babel-helper-bindify-decorators "^6.24.1"
     babel-runtime "^6.22.0"
     babel-traverse "^6.24.1"
     babel-types "^6.24.1"
@@ -527,6 +565,12 @@ babel-plugin-dynamic-import-node@1.0.2:
     babel-template "^6.24.1"
     babel-types "^6.24.1"
 
+babel-plugin-external-helpers@^6.18.0, babel-plugin-external-helpers@^6.22.0:
+  version "6.22.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-external-helpers/download/babel-plugin-external-helpers-6.22.0.tgz#2285f48b02bd5dede85175caf8c62e86adccefa1"
+  dependencies:
+    babel-runtime "^6.22.0"
+
 babel-plugin-istanbul@^4.0.0:
   version "4.1.4"
   resolved "http://r.cnpmjs.org/babel-plugin-istanbul/download/babel-plugin-istanbul-4.1.4.tgz#18dde84bf3ce329fddf3f4103fae921456d8e587"
@@ -543,9 +587,21 @@ babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "http://r.cnpmjs.org/babel-plugin-syntax-async-functions/download/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
 
+babel-plugin-syntax-async-generators@^6.5.0:
+  version "6.13.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-syntax-async-generators/download/babel-plugin-syntax-async-generators-6.13.0.tgz#6bc963ebb16eccbae6b92b596eb7f35c342a8b9a"
+
+babel-plugin-syntax-class-constructor-call@^6.18.0:
+  version "6.18.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-syntax-class-constructor-call/download/babel-plugin-syntax-class-constructor-call-6.18.0.tgz#9cb9d39fe43c8600bec8146456ddcbd4e1a76416"
+
 babel-plugin-syntax-class-properties@^6.8.0:
   version "6.13.0"
   resolved "http://r.cnpmjs.org/babel-plugin-syntax-class-properties/download/babel-plugin-syntax-class-properties-6.13.0.tgz#d7eb23b79a317f8543962c505b827c7d6cac27de"
+
+babel-plugin-syntax-decorators@^6.1.18, babel-plugin-syntax-decorators@^6.13.0:
+  version "6.13.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-syntax-decorators/download/babel-plugin-syntax-decorators-6.13.0.tgz#312563b4dbde3cc806cee3e416cceeaddd11ac0b"
 
 babel-plugin-syntax-dynamic-import@6.18.0, babel-plugin-syntax-dynamic-import@^6.18.0:
   version "6.18.0"
@@ -555,13 +611,17 @@ babel-plugin-syntax-exponentiation-operator@^6.8.0:
   version "6.13.0"
   resolved "http://r.cnpmjs.org/babel-plugin-syntax-exponentiation-operator/download/babel-plugin-syntax-exponentiation-operator-6.13.0.tgz#9ee7e8337290da95288201a6a57f4170317830de"
 
+babel-plugin-syntax-export-extensions@^6.8.0:
+  version "6.13.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-syntax-export-extensions/download/babel-plugin-syntax-export-extensions-6.13.0.tgz#70a1484f0f9089a4e84ad44bac353c95b9b12721"
+
 babel-plugin-syntax-flow@^6.18.0:
   version "6.18.0"
   resolved "http://r.cnpmjs.org/babel-plugin-syntax-flow/download/babel-plugin-syntax-flow-6.18.0.tgz#4c3ab20a2af26aa20cd25995c398c4eb70310c8d"
 
-babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
+babel-plugin-syntax-jsx@^6.18.0, babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
   version "6.18.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-syntax-jsx/download/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
+  resolved "http://registry.npm.taobao.org/babel-plugin-syntax-jsx/download/babel-plugin-syntax-jsx-6.18.0.tgz#0af32a9a6e13ca7a3fd5069e62d7b0f58d0d8946"
 
 babel-plugin-syntax-object-rest-spread@^6.8.0:
   version "6.13.0"
@@ -571,7 +631,15 @@ babel-plugin-syntax-trailing-function-commas@^6.22.0:
   version "6.22.0"
   resolved "http://r.cnpmjs.org/babel-plugin-syntax-trailing-function-commas/download/babel-plugin-syntax-trailing-function-commas-6.22.0.tgz#ba0360937f8d06e40180a43fe0d5616fff532cf3"
 
-babel-plugin-transform-async-to-generator@^6.22.0:
+babel-plugin-transform-async-generator-functions@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-async-generator-functions/download/babel-plugin-transform-async-generator-functions-6.24.1.tgz#f058900145fd3e9907a6ddf28da59f215258a5db"
+  dependencies:
+    babel-helper-remap-async-to-generator "^6.24.1"
+    babel-plugin-syntax-async-generators "^6.5.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-async-to-generator@^6.22.0, babel-plugin-transform-async-to-generator@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-async-to-generator/download/babel-plugin-transform-async-to-generator-6.24.1.tgz#6536e378aff6cb1d5517ac0e40eb3e9fc8d08761"
   dependencies:
@@ -579,30 +647,56 @@ babel-plugin-transform-async-to-generator@^6.22.0:
     babel-plugin-syntax-async-functions "^6.8.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-class-properties@6.24.1:
+babel-plugin-transform-class-constructor-call@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-class-properties/download/babel-plugin-transform-class-properties-6.24.1.tgz#6a79763ea61d33d36f37b611aa9def81a81b46ac"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-class-constructor-call/download/babel-plugin-transform-class-constructor-call-6.24.1.tgz#80dc285505ac067dcb8d6c65e2f6f11ab7765ef9"
+  dependencies:
+    babel-plugin-syntax-class-constructor-call "^6.18.0"
+    babel-runtime "^6.22.0"
+    babel-template "^6.24.1"
+
+babel-plugin-transform-class-properties@6.24.1, babel-plugin-transform-class-properties@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-class-properties/download/babel-plugin-transform-class-properties-6.24.1.tgz#6a79763ea61d33d36f37b611aa9def81a81b46ac"
   dependencies:
     babel-helper-function-name "^6.24.1"
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
+babel-plugin-transform-decorators-legacy@^1.3.4:
+  version "1.3.4"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-decorators-legacy/download/babel-plugin-transform-decorators-legacy-1.3.4.tgz#741b58f6c5bce9e6027e0882d9c994f04f366925"
+  dependencies:
+    babel-plugin-syntax-decorators "^6.1.18"
+    babel-runtime "^6.2.0"
+    babel-template "^6.3.0"
+
+babel-plugin-transform-decorators@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-decorators/download/babel-plugin-transform-decorators-6.24.1.tgz#788013d8f8c6b5222bdf7b344390dfd77569e24d"
+  dependencies:
+    babel-helper-explode-class "^6.24.1"
+    babel-plugin-syntax-decorators "^6.13.0"
+    babel-runtime "^6.22.0"
+    babel-template "^6.24.1"
+    babel-types "^6.24.1"
+
 babel-plugin-transform-es2015-arrow-functions@^6.22.0:
   version "6.22.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-arrow-functions/download/babel-plugin-transform-es2015-arrow-functions-6.22.0.tgz#452692cb711d5f79dc7f85e440ce41b9f244d221"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-arrow-functions/download/babel-plugin-transform-es2015-arrow-functions-6.22.0.tgz#452692cb711d5f79dc7f85e440ce41b9f244d221"
   dependencies:
     babel-runtime "^6.22.0"
 
 babel-plugin-transform-es2015-block-scoped-functions@^6.22.0:
   version "6.22.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-block-scoped-functions/download/babel-plugin-transform-es2015-block-scoped-functions-6.22.0.tgz#bbc51b49f964d70cb8d8e0b94e820246ce3a6141"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-block-scoped-functions/download/babel-plugin-transform-es2015-block-scoped-functions-6.22.0.tgz#bbc51b49f964d70cb8d8e0b94e820246ce3a6141"
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-block-scoping@^6.23.0:
+babel-plugin-transform-es2015-block-scoping@^6.23.0, babel-plugin-transform-es2015-block-scoping@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-block-scoping/download/babel-plugin-transform-es2015-block-scoping-6.24.1.tgz#76c295dc3a4741b1665adfd3167215dcff32a576"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-block-scoping/download/babel-plugin-transform-es2015-block-scoping-6.24.1.tgz#76c295dc3a4741b1665adfd3167215dcff32a576"
   dependencies:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
@@ -610,9 +704,9 @@ babel-plugin-transform-es2015-block-scoping@^6.23.0:
     babel-types "^6.24.1"
     lodash "^4.2.0"
 
-babel-plugin-transform-es2015-classes@^6.23.0:
+babel-plugin-transform-es2015-classes@^6.23.0, babel-plugin-transform-es2015-classes@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-classes/download/babel-plugin-transform-es2015-classes-6.24.1.tgz#5a4c58a50c9c9461e564b4b2a3bfabc97a2584db"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-classes/download/babel-plugin-transform-es2015-classes-6.24.1.tgz#5a4c58a50c9c9461e564b4b2a3bfabc97a2584db"
   dependencies:
     babel-helper-define-map "^6.24.1"
     babel-helper-function-name "^6.24.1"
@@ -624,35 +718,35 @@ babel-plugin-transform-es2015-classes@^6.23.0:
     babel-traverse "^6.24.1"
     babel-types "^6.24.1"
 
-babel-plugin-transform-es2015-computed-properties@^6.22.0:
+babel-plugin-transform-es2015-computed-properties@^6.22.0, babel-plugin-transform-es2015-computed-properties@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-computed-properties/download/babel-plugin-transform-es2015-computed-properties-6.24.1.tgz#6fe2a8d16895d5634f4cd999b6d3480a308159b3"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-computed-properties/download/babel-plugin-transform-es2015-computed-properties-6.24.1.tgz#6fe2a8d16895d5634f4cd999b6d3480a308159b3"
   dependencies:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-plugin-transform-es2015-destructuring@^6.23.0:
+babel-plugin-transform-es2015-destructuring@^6.22.0, babel-plugin-transform-es2015-destructuring@^6.23.0:
   version "6.23.0"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-destructuring/download/babel-plugin-transform-es2015-destructuring-6.23.0.tgz#997bb1f1ab967f682d2b0876fe358d60e765c56d"
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-duplicate-keys@^6.22.0:
+babel-plugin-transform-es2015-duplicate-keys@^6.22.0, babel-plugin-transform-es2015-duplicate-keys@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-duplicate-keys/download/babel-plugin-transform-es2015-duplicate-keys-6.24.1.tgz#73eb3d310ca969e3ef9ec91c53741a6f1576423e"
   dependencies:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-plugin-transform-es2015-for-of@^6.23.0:
+babel-plugin-transform-es2015-for-of@^6.22.0, babel-plugin-transform-es2015-for-of@^6.23.0:
   version "6.23.0"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-for-of/download/babel-plugin-transform-es2015-for-of-6.23.0.tgz#f47c95b2b613df1d3ecc2fdb7573623c75248691"
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-function-name@^6.22.0:
+babel-plugin-transform-es2015-function-name@^6.22.0, babel-plugin-transform-es2015-function-name@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-function-name/download/babel-plugin-transform-es2015-function-name-6.24.1.tgz#834c89853bc36b1af0f3a4c5dbaa94fd8eacaa8b"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-function-name/download/babel-plugin-transform-es2015-function-name-6.24.1.tgz#834c89853bc36b1af0f3a4c5dbaa94fd8eacaa8b"
   dependencies:
     babel-helper-function-name "^6.24.1"
     babel-runtime "^6.22.0"
@@ -660,7 +754,7 @@ babel-plugin-transform-es2015-function-name@^6.22.0:
 
 babel-plugin-transform-es2015-literals@^6.22.0:
   version "6.22.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-literals/download/babel-plugin-transform-es2015-literals-6.22.0.tgz#4f54a02d6cd66cf915280019a31d31925377ca2e"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-literals/download/babel-plugin-transform-es2015-literals-6.22.0.tgz#4f54a02d6cd66cf915280019a31d31925377ca2e"
   dependencies:
     babel-runtime "^6.22.0"
 
@@ -674,14 +768,14 @@ babel-plugin-transform-es2015-modules-amd@^6.22.0, babel-plugin-transform-es2015
 
 babel-plugin-transform-es2015-modules-commonjs@^6.23.0, babel-plugin-transform-es2015-modules-commonjs@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-modules-commonjs/download/babel-plugin-transform-es2015-modules-commonjs-6.24.1.tgz#d3e310b40ef664a36622200097c6d440298f2bfe"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-modules-commonjs/download/babel-plugin-transform-es2015-modules-commonjs-6.24.1.tgz#d3e310b40ef664a36622200097c6d440298f2bfe"
   dependencies:
     babel-plugin-transform-strict-mode "^6.24.1"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
     babel-types "^6.24.1"
 
-babel-plugin-transform-es2015-modules-systemjs@^6.23.0:
+babel-plugin-transform-es2015-modules-systemjs@^6.23.0, babel-plugin-transform-es2015-modules-systemjs@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-modules-systemjs/download/babel-plugin-transform-es2015-modules-systemjs-6.24.1.tgz#ff89a142b9119a906195f5f106ecf305d9407d23"
   dependencies:
@@ -689,7 +783,7 @@ babel-plugin-transform-es2015-modules-systemjs@^6.23.0:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-plugin-transform-es2015-modules-umd@^6.23.0:
+babel-plugin-transform-es2015-modules-umd@^6.23.0, babel-plugin-transform-es2015-modules-umd@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-modules-umd/download/babel-plugin-transform-es2015-modules-umd-6.24.1.tgz#ac997e6285cd18ed6176adb607d602344ad38468"
   dependencies:
@@ -697,16 +791,16 @@ babel-plugin-transform-es2015-modules-umd@^6.23.0:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-plugin-transform-es2015-object-super@^6.22.0:
+babel-plugin-transform-es2015-object-super@^6.22.0, babel-plugin-transform-es2015-object-super@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-object-super/download/babel-plugin-transform-es2015-object-super-6.24.1.tgz#24cef69ae21cb83a7f8603dad021f572eb278f8d"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-object-super/download/babel-plugin-transform-es2015-object-super-6.24.1.tgz#24cef69ae21cb83a7f8603dad021f572eb278f8d"
   dependencies:
     babel-helper-replace-supers "^6.24.1"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-parameters@^6.23.0:
+babel-plugin-transform-es2015-parameters@^6.23.0, babel-plugin-transform-es2015-parameters@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-parameters/download/babel-plugin-transform-es2015-parameters-6.24.1.tgz#57ac351ab49caf14a97cd13b09f66fdf0a625f2b"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-parameters/download/babel-plugin-transform-es2015-parameters-6.24.1.tgz#57ac351ab49caf14a97cd13b09f66fdf0a625f2b"
   dependencies:
     babel-helper-call-delegate "^6.24.1"
     babel-helper-get-function-arity "^6.24.1"
@@ -715,22 +809,22 @@ babel-plugin-transform-es2015-parameters@^6.23.0:
     babel-traverse "^6.24.1"
     babel-types "^6.24.1"
 
-babel-plugin-transform-es2015-shorthand-properties@^6.22.0:
+babel-plugin-transform-es2015-shorthand-properties@^6.22.0, babel-plugin-transform-es2015-shorthand-properties@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-shorthand-properties/download/babel-plugin-transform-es2015-shorthand-properties-6.24.1.tgz#24f875d6721c87661bbd99a4622e51f14de38aa0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-shorthand-properties/download/babel-plugin-transform-es2015-shorthand-properties-6.24.1.tgz#24f875d6721c87661bbd99a4622e51f14de38aa0"
   dependencies:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
 babel-plugin-transform-es2015-spread@^6.22.0:
   version "6.22.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-spread/download/babel-plugin-transform-es2015-spread-6.22.0.tgz#d6d68a99f89aedc4536c81a542e8dd9f1746f8d1"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-spread/download/babel-plugin-transform-es2015-spread-6.22.0.tgz#d6d68a99f89aedc4536c81a542e8dd9f1746f8d1"
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-sticky-regex@^6.22.0:
+babel-plugin-transform-es2015-sticky-regex@^6.22.0, babel-plugin-transform-es2015-sticky-regex@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-sticky-regex/download/babel-plugin-transform-es2015-sticky-regex-6.24.1.tgz#00c1cdb1aca71112cdf0cf6126c2ed6b457ccdbc"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-sticky-regex/download/babel-plugin-transform-es2015-sticky-regex-6.24.1.tgz#00c1cdb1aca71112cdf0cf6126c2ed6b457ccdbc"
   dependencies:
     babel-helper-regex "^6.24.1"
     babel-runtime "^6.22.0"
@@ -738,30 +832,37 @@ babel-plugin-transform-es2015-sticky-regex@^6.22.0:
 
 babel-plugin-transform-es2015-template-literals@^6.22.0:
   version "6.22.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-template-literals/download/babel-plugin-transform-es2015-template-literals-6.22.0.tgz#a84b3450f7e9f8f1f6839d6d687da84bb1236d8d"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-template-literals/download/babel-plugin-transform-es2015-template-literals-6.22.0.tgz#a84b3450f7e9f8f1f6839d6d687da84bb1236d8d"
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-typeof-symbol@^6.23.0:
+babel-plugin-transform-es2015-typeof-symbol@^6.22.0, babel-plugin-transform-es2015-typeof-symbol@^6.23.0:
   version "6.23.0"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-typeof-symbol/download/babel-plugin-transform-es2015-typeof-symbol-6.23.0.tgz#dec09f1cddff94b52ac73d505c84df59dcceb372"
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-es2015-unicode-regex@^6.22.0:
+babel-plugin-transform-es2015-unicode-regex@^6.22.0, babel-plugin-transform-es2015-unicode-regex@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-es2015-unicode-regex/download/babel-plugin-transform-es2015-unicode-regex-6.24.1.tgz#d38b12f42ea7323f729387f18a7c5ae1faeb35e9"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-es2015-unicode-regex/download/babel-plugin-transform-es2015-unicode-regex-6.24.1.tgz#d38b12f42ea7323f729387f18a7c5ae1faeb35e9"
   dependencies:
     babel-helper-regex "^6.24.1"
     babel-runtime "^6.22.0"
     regexpu-core "^2.0.0"
 
-babel-plugin-transform-exponentiation-operator@^6.22.0:
+babel-plugin-transform-exponentiation-operator@^6.22.0, babel-plugin-transform-exponentiation-operator@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-exponentiation-operator/download/babel-plugin-transform-exponentiation-operator-6.24.1.tgz#2ab0c9c7f3098fa48907772bb813fe41e8de3a0e"
   dependencies:
     babel-helper-builder-binary-assignment-operator-visitor "^6.24.1"
     babel-plugin-syntax-exponentiation-operator "^6.8.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-export-extensions@^6.22.0:
+  version "6.22.0"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-export-extensions/download/babel-plugin-transform-export-extensions-6.22.0.tgz#53738b47e75e8218589eea946cbbd39109bbe653"
+  dependencies:
+    babel-plugin-syntax-export-extensions "^6.8.0"
     babel-runtime "^6.22.0"
 
 babel-plugin-transform-flow-strip-types@^6.22.0:
@@ -771,9 +872,9 @@ babel-plugin-transform-flow-strip-types@^6.22.0:
     babel-plugin-syntax-flow "^6.18.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-object-rest-spread@6.23.0:
+babel-plugin-transform-object-rest-spread@6.23.0, babel-plugin-transform-object-rest-spread@^6.22.0, babel-plugin-transform-object-rest-spread@^6.23.0:
   version "6.23.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-object-rest-spread/download/babel-plugin-transform-object-rest-spread-6.23.0.tgz#875d6bc9be761c58a2ae3feee5dc4895d8c7f921"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-object-rest-spread/download/babel-plugin-transform-object-rest-spread-6.23.0.tgz#875d6bc9be761c58a2ae3feee5dc4895d8c7f921"
   dependencies:
     babel-plugin-syntax-object-rest-spread "^6.8.0"
     babel-runtime "^6.22.0"
@@ -784,9 +885,9 @@ babel-plugin-transform-react-constant-elements@6.23.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-react-display-name@^6.23.0:
+babel-plugin-transform-react-display-name@^6.23.0, babel-plugin-transform-react-display-name@^6.25.0:
   version "6.25.0"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-react-display-name/download/babel-plugin-transform-react-display-name-6.25.0.tgz#67e2bf1f1e9c93ab08db96792e05392bf2cc28d1"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-react-display-name/download/babel-plugin-transform-react-display-name-6.25.0.tgz#67e2bf1f1e9c93ab08db96792e05392bf2cc28d1"
   dependencies:
     babel-runtime "^6.22.0"
 
@@ -806,13 +907,13 @@ babel-plugin-transform-react-jsx-source@6.22.0, babel-plugin-transform-react-jsx
 
 babel-plugin-transform-react-jsx@6.24.1, babel-plugin-transform-react-jsx@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-plugin-transform-react-jsx/download/babel-plugin-transform-react-jsx-6.24.1.tgz#840a028e7df460dfc3a2d29f0c0d91f6376e66a3"
+  resolved "http://registry.npm.taobao.org/babel-plugin-transform-react-jsx/download/babel-plugin-transform-react-jsx-6.24.1.tgz#840a028e7df460dfc3a2d29f0c0d91f6376e66a3"
   dependencies:
     babel-helper-builder-react-jsx "^6.24.1"
     babel-plugin-syntax-jsx "^6.8.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-regenerator@6.24.1, babel-plugin-transform-regenerator@^6.22.0:
+babel-plugin-transform-regenerator@6.24.1, babel-plugin-transform-regenerator@^6.22.0, babel-plugin-transform-regenerator@^6.24.1:
   version "6.24.1"
   resolved "http://r.cnpmjs.org/babel-plugin-transform-regenerator/download/babel-plugin-transform-regenerator-6.24.1.tgz#b8da305ad43c3c99b4848e4fe4037b770d23c418"
   dependencies:
@@ -830,6 +931,14 @@ babel-plugin-transform-strict-mode@^6.24.1:
   dependencies:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
+
+babel-polyfill@^6.23.0:
+  version "6.23.0"
+  resolved "http://registry.npm.taobao.org/babel-polyfill/download/babel-polyfill-6.23.0.tgz#8364ca62df8eafb830499f699177466c3b03499d"
+  dependencies:
+    babel-runtime "^6.22.0"
+    core-js "^2.4.0"
+    regenerator-runtime "^0.10.0"
 
 babel-preset-env@1.5.2:
   version "1.5.2"
@@ -866,6 +975,56 @@ babel-preset-env@1.5.2:
     invariant "^2.2.2"
     semver "^5.3.0"
 
+babel-preset-es2015-rollup@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/babel-preset-es2015-rollup/download/babel-preset-es2015-rollup-3.0.0.tgz#854b63ecde2ee98cac40e882f67bfcf185b1f24a"
+  dependencies:
+    babel-plugin-external-helpers "^6.18.0"
+    babel-preset-es2015 "^6.3.13"
+    require-relative "^0.8.7"
+
+babel-preset-es2015@^6.24.1, babel-preset-es2015@^6.3.13:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-preset-es2015/download/babel-preset-es2015-6.24.1.tgz#d44050d6bc2c9feea702aaf38d727a0210538939"
+  dependencies:
+    babel-plugin-check-es2015-constants "^6.22.0"
+    babel-plugin-transform-es2015-arrow-functions "^6.22.0"
+    babel-plugin-transform-es2015-block-scoped-functions "^6.22.0"
+    babel-plugin-transform-es2015-block-scoping "^6.24.1"
+    babel-plugin-transform-es2015-classes "^6.24.1"
+    babel-plugin-transform-es2015-computed-properties "^6.24.1"
+    babel-plugin-transform-es2015-destructuring "^6.22.0"
+    babel-plugin-transform-es2015-duplicate-keys "^6.24.1"
+    babel-plugin-transform-es2015-for-of "^6.22.0"
+    babel-plugin-transform-es2015-function-name "^6.24.1"
+    babel-plugin-transform-es2015-literals "^6.22.0"
+    babel-plugin-transform-es2015-modules-amd "^6.24.1"
+    babel-plugin-transform-es2015-modules-commonjs "^6.24.1"
+    babel-plugin-transform-es2015-modules-systemjs "^6.24.1"
+    babel-plugin-transform-es2015-modules-umd "^6.24.1"
+    babel-plugin-transform-es2015-object-super "^6.24.1"
+    babel-plugin-transform-es2015-parameters "^6.24.1"
+    babel-plugin-transform-es2015-shorthand-properties "^6.24.1"
+    babel-plugin-transform-es2015-spread "^6.22.0"
+    babel-plugin-transform-es2015-sticky-regex "^6.24.1"
+    babel-plugin-transform-es2015-template-literals "^6.22.0"
+    babel-plugin-transform-es2015-typeof-symbol "^6.22.0"
+    babel-plugin-transform-es2015-unicode-regex "^6.24.1"
+    babel-plugin-transform-regenerator "^6.24.1"
+
+babel-preset-es2016@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-preset-es2016/download/babel-preset-es2016-6.24.1.tgz#f900bf93e2ebc0d276df9b8ab59724ebfd959f8b"
+  dependencies:
+    babel-plugin-transform-exponentiation-operator "^6.24.1"
+
+babel-preset-es2017@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-preset-es2017/download/babel-preset-es2017-6.24.1.tgz#597beadfb9f7f208bcfd8a12e9b2b29b8b2f14d1"
+  dependencies:
+    babel-plugin-syntax-trailing-function-commas "^6.22.0"
+    babel-plugin-transform-async-to-generator "^6.24.1"
+
 babel-preset-flow@^6.23.0:
   version "6.23.0"
   resolved "http://r.cnpmjs.org/babel-preset-flow/download/babel-preset-flow-6.23.0.tgz#e71218887085ae9a24b5be4169affb599816c49d"
@@ -877,6 +1036,14 @@ babel-preset-jest@^20.0.3:
   resolved "http://r.cnpmjs.org/babel-preset-jest/download/babel-preset-jest-20.0.3.tgz#cbacaadecb5d689ca1e1de1360ebfc66862c178a"
   dependencies:
     babel-plugin-jest-hoist "^20.0.3"
+
+babel-preset-latest@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-preset-latest/download/babel-preset-latest-6.24.1.tgz#677de069154a7485c2d25c577c02f624b85b85e8"
+  dependencies:
+    babel-preset-es2015 "^6.24.1"
+    babel-preset-es2016 "^6.24.1"
+    babel-preset-es2017 "^6.24.1"
 
 babel-preset-react-app@^3.0.2:
   version "3.0.2"
@@ -895,9 +1062,9 @@ babel-preset-react-app@^3.0.2:
     babel-preset-env "1.5.2"
     babel-preset-react "6.24.1"
 
-babel-preset-react@6.24.1:
+babel-preset-react@6.24.1, babel-preset-react@^6.24.1:
   version "6.24.1"
-  resolved "http://r.cnpmjs.org/babel-preset-react/download/babel-preset-react-6.24.1.tgz#ba69dfaea45fc3ec639b6a4ecea6e17702c91380"
+  resolved "http://registry.npm.taobao.org/babel-preset-react/download/babel-preset-react-6.24.1.tgz#ba69dfaea45fc3ec639b6a4ecea6e17702c91380"
   dependencies:
     babel-plugin-syntax-jsx "^6.3.13"
     babel-plugin-transform-react-display-name "^6.23.0"
@@ -905,6 +1072,33 @@ babel-preset-react@6.24.1:
     babel-plugin-transform-react-jsx-self "^6.22.0"
     babel-plugin-transform-react-jsx-source "^6.22.0"
     babel-preset-flow "^6.23.0"
+
+babel-preset-stage-1@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-preset-stage-1/download/babel-preset-stage-1-6.24.1.tgz#7692cd7dcd6849907e6ae4a0a85589cfb9e2bfb0"
+  dependencies:
+    babel-plugin-transform-class-constructor-call "^6.24.1"
+    babel-plugin-transform-export-extensions "^6.22.0"
+    babel-preset-stage-2 "^6.24.1"
+
+babel-preset-stage-2@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-preset-stage-2/download/babel-preset-stage-2-6.24.1.tgz#d9e2960fb3d71187f0e64eec62bc07767219bdc1"
+  dependencies:
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    babel-plugin-transform-class-properties "^6.24.1"
+    babel-plugin-transform-decorators "^6.24.1"
+    babel-preset-stage-3 "^6.24.1"
+
+babel-preset-stage-3@^6.24.1:
+  version "6.24.1"
+  resolved "http://registry.npm.taobao.org/babel-preset-stage-3/download/babel-preset-stage-3-6.24.1.tgz#836ada0a9e7a7fa37cb138fb9326f87934a48395"
+  dependencies:
+    babel-plugin-syntax-trailing-function-commas "^6.22.0"
+    babel-plugin-transform-async-generator-functions "^6.24.1"
+    babel-plugin-transform-async-to-generator "^6.24.1"
+    babel-plugin-transform-exponentiation-operator "^6.24.1"
+    babel-plugin-transform-object-rest-spread "^6.22.0"
 
 babel-register@^6.24.1:
   version "6.24.1"
@@ -925,14 +1119,14 @@ babel-runtime@6.23.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-runtime@^6.18.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.25.0:
+babel-runtime@^6.18.0, babel-runtime@^6.2.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0, babel-runtime@^6.23.0, babel-runtime@^6.25.0:
   version "6.25.0"
   resolved "http://r.cnpmjs.org/babel-runtime/download/babel-runtime-6.25.0.tgz#33b98eaa5d482bb01a8d1aa6b437ad2b01aec41c"
   dependencies:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-template@^6.16.0, babel-template@^6.24.1, babel-template@^6.25.0:
+babel-template@^6.16.0, babel-template@^6.24.1, babel-template@^6.25.0, babel-template@^6.3.0:
   version "6.25.0"
   resolved "http://r.cnpmjs.org/babel-template/download/babel-template-6.25.0.tgz#665241166b7c2aa4c619d71e192969552b10c071"
   dependencies:
@@ -968,6 +1162,10 @@ babel-types@^6.18.0, babel-types@^6.19.0, babel-types@^6.23.0, babel-types@^6.24
 babylon@^6.17.0, babylon@^6.17.2, babylon@^6.17.4:
   version "6.17.4"
   resolved "http://r.cnpmjs.org/babylon/download/babylon-6.17.4.tgz#3e8b7402b88d22c3423e137a1577883b15ff869a"
+
+balanced-match@0.1.0:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/balanced-match/download/balanced-match-0.1.0.tgz#b504bd05869b39259dd0c5efc35d843176dccc4a"
 
 balanced-match@^0.4.2:
   version "0.4.2"
@@ -1075,7 +1273,7 @@ brorand@^1.0.1:
   version "1.1.0"
   resolved "http://r.cnpmjs.org/brorand/download/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
 
-browser-resolve@^1.11.2:
+browser-resolve@^1.11.0, browser-resolve@^1.11.2:
   version "1.11.2"
   resolved "http://r.cnpmjs.org/browser-resolve/download/browser-resolve-1.11.2.tgz#8ff09b0a2c421718a1051c260b32e48f442938ce"
   dependencies:
@@ -1139,7 +1337,7 @@ browserslist@^1.3.6, browserslist@^1.5.2, browserslist@^1.7.6:
     caniuse-db "^1.0.30000639"
     electron-to-chromium "^1.2.7"
 
-browserslist@^2.1.2, browserslist@^2.1.5:
+browserslist@^2.0.0, browserslist@^2.1.2, browserslist@^2.1.5:
   version "2.3.1"
   resolved "http://r.cnpmjs.org/browserslist/download/browserslist-2.3.1.tgz#39500a2090330b2a090120ea6c7fc78b6e091c5e"
   dependencies:
@@ -1158,6 +1356,10 @@ bser@^2.0.0:
   dependencies:
     node-int64 "^0.4.0"
 
+buffer-es6@^4.9.1:
+  version "4.9.3"
+  resolved "http://registry.npm.taobao.org/buffer-es6/download/buffer-es6-4.9.3.tgz#f26347b82df76fd37e18bcb5288c4970cfd5c404"
+
 buffer-indexof@^1.0.0:
   version "1.1.0"
   resolved "http://r.cnpmjs.org/buffer-indexof/download/buffer-indexof-1.1.0.tgz#f54f647c4f4e25228baa656a2e57e43d5f270982"
@@ -1174,7 +1376,7 @@ buffer@^4.3.0:
     ieee754 "^1.1.4"
     isarray "^1.0.0"
 
-builtin-modules@^1.0.0, builtin-modules@^1.1.1:
+builtin-modules@^1.0.0, builtin-modules@^1.1.0, builtin-modules@^1.1.1:
   version "1.1.1"
   resolved "http://r.cnpmjs.org/builtin-modules/download/builtin-modules-1.1.1.tgz#270f076c5a72c02f5b65a47df94c5fe3a278892f"
 
@@ -1239,11 +1441,20 @@ caniuse-api@^1.5.2:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
+caniuse-api@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/caniuse-api/download/caniuse-api-2.0.0.tgz#b1ddb5a5966b16f48dc4998444d4bbc6c7d9d834"
+  dependencies:
+    browserslist "^2.0.0"
+    caniuse-lite "^1.0.0"
+    lodash.memoize "^4.1.2"
+    lodash.uniq "^4.5.0"
+
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000713"
   resolved "http://r.cnpmjs.org/caniuse-db/download/caniuse-db-1.0.30000713.tgz#ea01761840b5f148faf94ec5f34d0aa1d321966f"
 
-caniuse-lite@^1.0.30000697, caniuse-lite@^1.0.30000712:
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30000697, caniuse-lite@^1.0.30000712:
   version "1.0.30000713"
   resolved "http://r.cnpmjs.org/caniuse-lite/download/caniuse-lite-1.0.30000713.tgz#33957ecb4a2154a5d40a60d13d8bf1cfa0881a8a"
 
@@ -1386,7 +1597,7 @@ code-point-at@^1.0.0:
   version "1.1.0"
   resolved "http://r.cnpmjs.org/code-point-at/download/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
 
-color-convert@^1.3.0, color-convert@^1.9.0:
+color-convert@^1.3.0, color-convert@^1.8.2, color-convert@^1.9.0:
   version "1.9.0"
   resolved "http://r.cnpmjs.org/color-convert/download/color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a"
   dependencies:
@@ -1402,6 +1613,13 @@ color-string@^0.3.0:
   dependencies:
     color-name "^1.0.0"
 
+color-string@^1.4.0:
+  version "1.5.2"
+  resolved "http://registry.npm.taobao.org/color-string/download/color-string-1.5.2.tgz#26e45814bc3c9a7cbd6751648a41434514a773a9"
+  dependencies:
+    color-name "^1.0.0"
+    simple-swizzle "^0.2.2"
+
 color@^0.11.0:
   version "0.11.4"
   resolved "http://r.cnpmjs.org/color/download/color-0.11.4.tgz#6d7b5c74fb65e841cd48792ad1ed5e07b904d764"
@@ -1409,6 +1627,13 @@ color@^0.11.0:
     clone "^1.0.2"
     color-convert "^1.3.0"
     color-string "^0.3.0"
+
+color@^1.0.3:
+  version "1.0.3"
+  resolved "http://registry.npm.taobao.org/color/download/color-1.0.3.tgz#e48e832d85f14ef694fb468811c2d5cfe729b55d"
+  dependencies:
+    color-convert "^1.8.2"
+    color-string "^1.4.0"
 
 colormin@^1.0.5:
   version "1.1.2"
@@ -1428,7 +1653,7 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
-commander@2.11.x, commander@~2.11.0:
+commander@2.11.x, commander@^2.8.1, commander@~2.11.0:
   version "2.11.0"
   resolved "http://r.cnpmjs.org/commander/download/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
@@ -1471,6 +1696,12 @@ concat-stream@^1.6.0:
     inherits "^2.0.3"
     readable-stream "^2.2.2"
     typedarray "^0.0.6"
+
+concat-with-sourcemaps@^1.0.4:
+  version "1.0.4"
+  resolved "http://registry.npm.taobao.org/concat-with-sourcemaps/download/concat-with-sourcemaps-1.0.4.tgz#f55b3be2aeb47601b10a2d5259ccfb70fd2f1dd6"
+  dependencies:
+    source-map "^0.5.1"
 
 configstore@^2.0.0:
   version "2.1.0"
@@ -1597,6 +1828,13 @@ create-react-class@^15.6.0:
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
 
+cross-env@^5.0.5:
+  version "5.0.5"
+  resolved "http://registry.npm.taobao.org/cross-env/download/cross-env-5.0.5.tgz#4383d364d9660873dd185b398af3bfef5efffef3"
+  dependencies:
+    cross-spawn "^5.1.0"
+    is-windows "^1.0.0"
+
 cross-spawn@5.1.0, cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "http://r.cnpmjs.org/cross-spawn/download/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
@@ -1632,6 +1870,15 @@ crypto-browserify@^3.11.0:
     pbkdf2 "^3.0.3"
     public-encrypt "^4.0.0"
     randombytes "^2.0.0"
+
+css-color-function@^1.3.0:
+  version "1.3.0"
+  resolved "http://registry.npm.taobao.org/css-color-function/download/css-color-function-1.3.0.tgz#72c767baf978f01b8a8a94f42f17ba5d22a776fc"
+  dependencies:
+    balanced-match "0.1.0"
+    color "^0.11.0"
+    debug "~0.7.4"
+    rgb "~0.1.0"
 
 css-color-names@0.0.4:
   version "0.0.4"
@@ -1672,6 +1919,10 @@ css-selector-tokenizer@^0.7.0:
     cssesc "^0.1.0"
     fastparse "^1.1.1"
     regexpu-core "^1.0.0"
+
+css-unit-converter@^1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/css-unit-converter/download/css-unit-converter-1.1.1.tgz#d9b9281adcfd8ced935bdbaba83786897f64e996"
 
 css-vendor@^0.3.8:
   version "0.3.8"
@@ -1772,6 +2023,10 @@ debug@2.6.8, debug@^2.1.1, debug@^2.2.0, debug@^2.6.0, debug@^2.6.3, debug@^2.6.
   resolved "http://r.cnpmjs.org/debug/download/debug-2.6.8.tgz#e731531ca2ede27d188222427da17821d68ff4fc"
   dependencies:
     ms "2.0.0"
+
+debug@~0.7.4:
+  version "0.7.4"
+  resolved "http://registry.npm.taobao.org/debug/download/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
 
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
@@ -2318,6 +2573,14 @@ estraverse@^4.0.0, estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
   version "4.2.0"
   resolved "http://r.cnpmjs.org/estraverse/download/estraverse-4.2.0.tgz#0dee3fed31fcd469618ce7342099fc1afa0bdb13"
 
+estree-walker@^0.2.1:
+  version "0.2.1"
+  resolved "http://registry.npm.taobao.org/estree-walker/download/estree-walker-0.2.1.tgz#bdafe8095383d8414d5dc2ecf4c9173b6db9412e"
+
+estree-walker@^0.3.0:
+  version "0.3.1"
+  resolved "http://registry.npm.taobao.org/estree-walker/download/estree-walker-0.3.1.tgz#e6b1a51cf7292524e7237c312e5fe6660c1ce1aa"
+
 esutils@^2.0.0, esutils@^2.0.2:
   version "2.0.2"
   resolved "http://r.cnpmjs.org/esutils/download/esutils-2.0.2.tgz#0abf4f1caa5bcb1f7a9d8acc6dea4faaa04bac9b"
@@ -2671,6 +2934,10 @@ fs-extra@^0.30.0:
     path-is-absolute "^1.0.0"
     rimraf "^2.2.8"
 
+fs-readdir-recursive@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/fs-readdir-recursive/download/fs-readdir-recursive-1.0.0.tgz#8cd1745c8b4f8a29c8caec392476921ba195f560"
+
 fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "http://r.cnpmjs.org/fs.realpath/download/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
@@ -2858,7 +3125,7 @@ got@^5.0.0:
     unzip-response "^1.0.2"
     url-parse-lax "^1.0.0"
 
-graceful-fs@4.1.11, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
+graceful-fs@4.1.11, graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.4, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "4.1.11"
   resolved "http://r.cnpmjs.org/graceful-fs/download/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
@@ -2966,6 +3233,10 @@ hoek@2.x.x:
 hoist-non-react-statics@^1.0.0, hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "http://r.cnpmjs.org/hoist-non-react-statics/download/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
+
+hoist-non-react-statics@^2.2.1:
+  version "2.2.2"
+  resolved "http://registry.npm.taobao.org/hoist-non-react-statics/download/hoist-non-react-statics-2.2.2.tgz#c0eca5a7d5a28c5ada3107eb763b01da6bfa81fb"
 
 home-or-tmp@^2.0.0:
   version "2.0.0"
@@ -3177,7 +3448,7 @@ interpret@^1.0.0:
   version "1.0.3"
   resolved "http://r.cnpmjs.org/interpret/download/interpret-1.0.3.tgz#cbc35c62eeee73f19ab7b10a801511401afc0f90"
 
-invariant@^2.2.0, invariant@^2.2.2:
+invariant@^2.0.0, invariant@^2.2.0, invariant@^2.2.2:
   version "2.2.2"
   resolved "http://r.cnpmjs.org/invariant/download/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -3202,6 +3473,10 @@ is-absolute-url@^2.0.0:
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "http://r.cnpmjs.org/is-arrayish/download/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
+
+is-arrayish@^0.3.1:
+  version "0.3.1"
+  resolved "http://registry.npm.taobao.org/is-arrayish/download/is-arrayish-0.3.1.tgz#c2dfc386abaa0c3e33c48db3fe87059e69065efd"
 
 is-binary-path@^1.0.0:
   version "1.0.1"
@@ -3294,6 +3569,10 @@ is-glob@^3.1.0:
 is-in-browser@^1.0.2:
   version "1.1.3"
   resolved "http://r.cnpmjs.org/is-in-browser/download/is-in-browser-1.1.3.tgz#56ff4db683a078c6082eb95dad7dc62e1d04f835"
+
+is-module@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/is-module/download/is-module-1.0.0.tgz#3258fb69f78c14d5b815d664336b4cffb6441591"
 
 is-npm@^1.0.0:
   version "1.0.0"
@@ -3399,7 +3678,7 @@ is-utf8@^0.2.0:
   version "0.2.1"
   resolved "http://r.cnpmjs.org/is-utf8/download/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
 
-is-windows@^1.0.1:
+is-windows@^1.0.0, is-windows@^1.0.1:
   version "1.0.1"
   resolved "http://r.cnpmjs.org/is-windows/download/is-windows-1.0.1.tgz#310db70f742d259a16a369202b51af84233310d9"
 
@@ -3418,6 +3697,10 @@ isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
 isexe@^2.0.0:
   version "2.0.0"
   resolved "http://r.cnpmjs.org/isexe/download/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
+
+isnumeric@^0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.taobao.org/isnumeric/download/isnumeric-0.2.0.tgz#a2347ba360de19e33d0ffd590fddf7755cbf2e64"
 
 isobject@^2.0.0:
   version "2.1.0"
@@ -4007,6 +4290,10 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash-es@^4.17.4, lodash-es@^4.2.0:
+  version "4.17.4"
+  resolved "http://registry.npm.taobao.org/lodash-es/download/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
+
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "http://r.cnpmjs.org/lodash._reinterpolate/download/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -4039,7 +4326,7 @@ lodash.mergewith@^4.6.0:
   version "4.6.0"
   resolved "http://r.cnpmjs.org/lodash.mergewith/download/lodash.mergewith-4.6.0.tgz#150cf0a16791f5903b8891eab154609274bdea55"
 
-lodash.template@^4.4.0:
+lodash.template@^4.2.4, lodash.template@^4.4.0:
   version "4.4.0"
   resolved "http://r.cnpmjs.org/lodash.template/download/lodash.template-4.4.0.tgz#e73a0385c8355591746e020b99679c690e68fba0"
   dependencies:
@@ -4058,7 +4345,7 @@ lodash.uniq@^4.5.0:
 
 "lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.3.0, lodash@~4.17.4:
   version "4.17.4"
-  resolved "http://r.cnpmjs.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
+  resolved "http://registry.npm.taobao.org/lodash/download/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
 loglevel@^1.4.1:
   version "1.4.1"
@@ -4099,6 +4386,24 @@ lru-cache@^4.0.1:
 macaddress@^0.2.8:
   version "0.2.8"
   resolved "http://r.cnpmjs.org/macaddress/download/macaddress-0.2.8.tgz#5904dc537c39ec6dbefeae902327135fa8511f12"
+
+magic-string@^0.15.2:
+  version "0.15.2"
+  resolved "http://registry.npm.taobao.org/magic-string/download/magic-string-0.15.2.tgz#0681d7388741bbc3addaa65060992624c6c09e9c"
+  dependencies:
+    vlq "^0.2.1"
+
+magic-string@^0.16.0:
+  version "0.16.0"
+  resolved "http://registry.npm.taobao.org/magic-string/download/magic-string-0.16.0.tgz#970ebb0da7193301285fb1aa650f39bdd81eb45a"
+  dependencies:
+    vlq "^0.2.1"
+
+magic-string@^0.19.0:
+  version "0.19.1"
+  resolved "http://registry.npm.taobao.org/magic-string/download/magic-string-0.19.1.tgz#14d768013caf2ec8fdea16a49af82fc377e75201"
+  dependencies:
+    vlq "^0.2.1"
 
 make-dir@^1.0.0:
   version "1.0.0"
@@ -4580,6 +4885,10 @@ once@^1.3.0, once@^1.3.3, once@^1.4.0:
   dependencies:
     wrappy "1"
 
+onecolor@^3.0.4:
+  version "3.0.4"
+  resolved "http://registry.npm.taobao.org/onecolor/download/onecolor-3.0.4.tgz#75a46f80da6c7aaa5b4daae17a47198bd9652494"
+
 onetime@^2.0.0:
   version "2.0.1"
   resolved "http://r.cnpmjs.org/onetime/download/onetime-2.0.1.tgz#067428230fd67443b2794b22bba528b6867962d4"
@@ -4655,6 +4964,14 @@ osenv@0, osenv@^0.1.0, osenv@^0.1.4:
   dependencies:
     os-homedir "^1.0.0"
     os-tmpdir "^1.0.0"
+
+output-file-sync@^1.1.0:
+  version "1.1.2"
+  resolved "http://registry.npm.taobao.org/output-file-sync/download/output-file-sync-1.1.2.tgz#d0a33eefe61a205facb90092e826598d5245ce76"
+  dependencies:
+    graceful-fs "^4.1.4"
+    mkdirp "^0.5.1"
+    object-assign "^4.1.0"
 
 p-finally@^1.0.0:
   version "1.0.0"
@@ -4822,6 +5139,14 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "http://r.cnpmjs.org/pinkie/download/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
+pixrem@^4.0.0:
+  version "4.0.1"
+  resolved "http://registry.npm.taobao.org/pixrem/download/pixrem-4.0.1.tgz#2da4a1de6ec4423c5fc3794e930b81d4490ec686"
+  dependencies:
+    browserslist "^2.0.0"
+    postcss "^6.0.0"
+    reduce-css-calc "^1.2.7"
+
 pkg-dir@^1.0.0:
   version "1.0.0"
   resolved "http://r.cnpmjs.org/pkg-dir/download/pkg-dir-1.0.0.tgz#7a4b508a8d5bb2d629d447056ff4e9c9314cf3d4"
@@ -4833,6 +5158,13 @@ pkg-dir@^2.0.0:
   resolved "http://r.cnpmjs.org/pkg-dir/download/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
+
+pleeease-filters@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.taobao.org/pleeease-filters/download/pleeease-filters-4.0.0.tgz#6632b2fb05648d2758d865384fbced79e1ccaec7"
+  dependencies:
+    onecolor "^3.0.4"
+    postcss "^6.0.1"
 
 pluralize@^4.0.0:
   version "4.0.0"
@@ -4846,6 +5178,21 @@ portfinder@^1.0.9:
     debug "^2.2.0"
     mkdirp "0.5.x"
 
+postcss-apply@^0.8.0:
+  version "0.8.0"
+  resolved "http://registry.npm.taobao.org/postcss-apply/download/postcss-apply-0.8.0.tgz#14e544bbb5cb6f1c1e048857965d79ae066b1343"
+  dependencies:
+    babel-runtime "^6.23.0"
+    balanced-match "^0.4.2"
+    postcss "^6.0.0"
+
+postcss-attribute-case-insensitive@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-attribute-case-insensitive/download/postcss-attribute-case-insensitive-2.0.0.tgz#94dc422c8f90997f16bd33a3654bbbec084963b4"
+  dependencies:
+    postcss "^6.0.0"
+    postcss-selector-parser "^2.2.3"
+
 postcss-calc@^5.2.0:
   version "5.3.1"
   resolved "http://r.cnpmjs.org/postcss-calc/download/postcss-calc-5.3.1.tgz#77bae7ca928ad85716e2fda42f261bf7c1d65b5e"
@@ -4853,6 +5200,80 @@ postcss-calc@^5.2.0:
     postcss "^5.0.2"
     postcss-message-helpers "^2.0.0"
     reduce-css-calc "^1.2.6"
+
+postcss-calc@^6.0.0:
+  version "6.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-calc/download/postcss-calc-6.0.0.tgz#b681b279c6d24fbe0e33ed9045803705445d613b"
+  dependencies:
+    css-unit-converter "^1.1.1"
+    postcss "^6.0.0"
+    postcss-selector-parser "^2.2.2"
+    reduce-css-calc "^2.0.0"
+
+postcss-color-function@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-function/download/postcss-color-function-4.0.0.tgz#7e0106f4f6a1ecb1ad5b3a8553ace5e828aae187"
+  dependencies:
+    css-color-function "^1.3.0"
+    postcss "^6.0.1"
+    postcss-message-helpers "^2.0.0"
+    postcss-value-parser "^3.3.0"
+
+postcss-color-gray@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-gray/download/postcss-color-gray-4.0.0.tgz#681bf305097dd66bfef0e1e6282d5d99b5acc95d"
+  dependencies:
+    color "^1.0.3"
+    postcss "^6.0.1"
+    postcss-message-helpers "^2.0.0"
+    reduce-function-call "^1.0.2"
+
+postcss-color-hex-alpha@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-hex-alpha/download/postcss-color-hex-alpha-3.0.0.tgz#1e53e6c8acb237955e8fd08b7ecdb1b8b8309f95"
+  dependencies:
+    color "^1.0.3"
+    postcss "^6.0.1"
+    postcss-message-helpers "^2.0.0"
+
+postcss-color-hsl@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-hsl/download/postcss-color-hsl-2.0.0.tgz#12703666fa310430e3f30a454dac1386317d5844"
+  dependencies:
+    postcss "^6.0.1"
+    postcss-value-parser "^3.3.0"
+    units-css "^0.4.0"
+
+postcss-color-hwb@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-hwb/download/postcss-color-hwb-3.0.0.tgz#3402b19ef4d8497540c1fb5072be9863ca95571e"
+  dependencies:
+    color "^1.0.3"
+    postcss "^6.0.1"
+    postcss-message-helpers "^2.0.0"
+    reduce-function-call "^1.0.2"
+
+postcss-color-rebeccapurple@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-rebeccapurple/download/postcss-color-rebeccapurple-3.0.0.tgz#eebaf03d363b4300b96792bd3081c19ed66513d3"
+  dependencies:
+    postcss "^6.0.1"
+    postcss-value-parser "^3.3.0"
+
+postcss-color-rgb@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-rgb/download/postcss-color-rgb-2.0.0.tgz#14539c8a7131494b482e0dd1cc265ff6514b5263"
+  dependencies:
+    postcss "^6.0.1"
+    postcss-value-parser "^3.3.0"
+
+postcss-color-rgba-fallback@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-color-rgba-fallback/download/postcss-color-rgba-fallback-3.0.0.tgz#37d5c9353a07a09270912a82606bb42a0d702c04"
+  dependencies:
+    postcss "^6.0.6"
+    postcss-value-parser "^3.3.0"
+    rgb-hex "^2.1.0"
 
 postcss-colormin@^2.1.8:
   version "2.2.2"
@@ -4868,6 +5289,62 @@ postcss-convert-values@^2.3.4:
   dependencies:
     postcss "^5.0.11"
     postcss-value-parser "^3.1.2"
+
+postcss-cssnext@^3.0.2:
+  version "3.0.2"
+  resolved "http://registry.npm.taobao.org/postcss-cssnext/download/postcss-cssnext-3.0.2.tgz#63b77adb0b8a4c1d5ec32cd345539535a3417d48"
+  dependencies:
+    autoprefixer "^7.1.1"
+    caniuse-api "^2.0.0"
+    chalk "^2.0.1"
+    pixrem "^4.0.0"
+    pleeease-filters "^4.0.0"
+    postcss "^6.0.5"
+    postcss-apply "^0.8.0"
+    postcss-attribute-case-insensitive "^2.0.0"
+    postcss-calc "^6.0.0"
+    postcss-color-function "^4.0.0"
+    postcss-color-gray "^4.0.0"
+    postcss-color-hex-alpha "^3.0.0"
+    postcss-color-hsl "^2.0.0"
+    postcss-color-hwb "^3.0.0"
+    postcss-color-rebeccapurple "^3.0.0"
+    postcss-color-rgb "^2.0.0"
+    postcss-color-rgba-fallback "^3.0.0"
+    postcss-custom-media "^6.0.0"
+    postcss-custom-properties "^6.1.0"
+    postcss-custom-selectors "^4.0.1"
+    postcss-font-family-system-ui "^2.0.1"
+    postcss-font-variant "^3.0.0"
+    postcss-image-set-polyfill "^0.3.5"
+    postcss-initial "^2.0.0"
+    postcss-media-minmax "^3.0.0"
+    postcss-nesting "^4.0.1"
+    postcss-pseudo-class-any-link "^4.0.0"
+    postcss-pseudoelements "^5.0.0"
+    postcss-replace-overflow-wrap "^2.0.0"
+    postcss-selector-matches "^3.0.1"
+    postcss-selector-not "^3.0.1"
+
+postcss-custom-media@^6.0.0:
+  version "6.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-custom-media/download/postcss-custom-media-6.0.0.tgz#be532784110ecb295044fb5395a18006eb21a737"
+  dependencies:
+    postcss "^6.0.1"
+
+postcss-custom-properties@^6.1.0:
+  version "6.1.0"
+  resolved "http://registry.npm.taobao.org/postcss-custom-properties/download/postcss-custom-properties-6.1.0.tgz#9caf1151ac41b1e9e64d3a2ff9ece996ca18977d"
+  dependencies:
+    balanced-match "^1.0.0"
+    postcss "^6.0.3"
+
+postcss-custom-selectors@^4.0.1:
+  version "4.0.1"
+  resolved "http://registry.npm.taobao.org/postcss-custom-selectors/download/postcss-custom-selectors-4.0.1.tgz#781382f94c52e727ef5ca4776ea2adf49a611382"
+  dependencies:
+    postcss "^6.0.1"
+    postcss-selector-matches "^3.0.0"
 
 postcss-discard-comments@^2.0.4:
   version "2.0.4"
@@ -4913,6 +5390,34 @@ postcss-flexbugs-fixes@3.2.0:
   dependencies:
     postcss "^6.0.1"
 
+postcss-font-family-system-ui@^2.0.1:
+  version "2.0.1"
+  resolved "http://registry.npm.taobao.org/postcss-font-family-system-ui/download/postcss-font-family-system-ui-2.0.1.tgz#318a075fdcb84b864aa823a51935ef0a5872e911"
+  dependencies:
+    lodash "^4.17.4"
+    postcss "^6.0.1"
+    postcss-value-parser "^3.3.0"
+
+postcss-font-variant@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-font-variant/download/postcss-font-variant-3.0.0.tgz#08ccc88f6050ba82ed8ef2cc76c0c6a6b41f183e"
+  dependencies:
+    postcss "^6.0.1"
+
+postcss-image-set-polyfill@^0.3.5:
+  version "0.3.5"
+  resolved "http://registry.npm.taobao.org/postcss-image-set-polyfill/download/postcss-image-set-polyfill-0.3.5.tgz#0f193413700cf1f82bd39066ef016d65a4a18181"
+  dependencies:
+    postcss "^6.0.1"
+    postcss-media-query-parser "^0.2.3"
+
+postcss-initial@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-initial/download/postcss-initial-2.0.0.tgz#72715f7336e0bb79351d99ee65c4a253a8441ba4"
+  dependencies:
+    lodash.template "^4.2.4"
+    postcss "^6.0.1"
+
 postcss-load-config@^1.2.0:
   version "1.2.0"
   resolved "http://r.cnpmjs.org/postcss-load-config/download/postcss-load-config-1.2.0.tgz#539e9afc9ddc8620121ebf9d8c3673e0ce50d28a"
@@ -4944,6 +5449,16 @@ postcss-loader@2.0.6:
     postcss "^6.0.2"
     postcss-load-config "^1.2.0"
     schema-utils "^0.3.0"
+
+postcss-media-minmax@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-media-minmax/download/postcss-media-minmax-3.0.0.tgz#675256037a43ef40bc4f0760bfd06d4dc69d48d2"
+  dependencies:
+    postcss "^6.0.1"
+
+postcss-media-query-parser@^0.2.3:
+  version "0.2.3"
+  resolved "http://registry.npm.taobao.org/postcss-media-query-parser/download/postcss-media-query-parser-0.2.3.tgz#27b39c6f4d94f81b1a73b8f76351c609e5cef244"
 
 postcss-merge-idents@^2.1.5:
   version "2.1.7"
@@ -5033,6 +5548,19 @@ postcss-modules-values@^1.1.0:
     icss-replace-symbols "^1.1.0"
     postcss "^6.0.1"
 
+postcss-nested@^2.1.0:
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/postcss-nested/download/postcss-nested-2.1.0.tgz#72661d79463f5894a8c4b890479baec689d1c693"
+  dependencies:
+    postcss "^6.0.8"
+    postcss-selector-parser "^2.2.3"
+
+postcss-nesting@^4.0.1:
+  version "4.0.1"
+  resolved "http://registry.npm.taobao.org/postcss-nesting/download/postcss-nesting-4.0.1.tgz#8fc2ce40cbfcfab7ee24e7b68fb6ebe84b641469"
+  dependencies:
+    postcss "^6.0.1"
+
 postcss-normalize-charset@^1.1.0:
   version "1.1.1"
   resolved "http://r.cnpmjs.org/postcss-normalize-charset/download/postcss-normalize-charset-1.1.1.tgz#ef9ee71212d7fe759c78ed162f61ed62b5cb93f1"
@@ -5055,6 +5583,19 @@ postcss-ordered-values@^2.1.0:
     postcss "^5.0.4"
     postcss-value-parser "^3.0.1"
 
+postcss-pseudo-class-any-link@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-pseudo-class-any-link/download/postcss-pseudo-class-any-link-4.0.0.tgz#9152a0613d3450720513e8892854bae42d0ee68e"
+  dependencies:
+    postcss "^6.0.1"
+    postcss-selector-parser "^2.2.3"
+
+postcss-pseudoelements@^5.0.0:
+  version "5.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-pseudoelements/download/postcss-pseudoelements-5.0.0.tgz#eef194e8d524645ca520a949e95e518e812402cb"
+  dependencies:
+    postcss "^6.0.0"
+
 postcss-reduce-idents@^2.2.2:
   version "2.4.0"
   resolved "http://r.cnpmjs.org/postcss-reduce-idents/download/postcss-reduce-idents-2.4.0.tgz#c2c6d20cc958284f6abfbe63f7609bf409059ad3"
@@ -5076,13 +5617,39 @@ postcss-reduce-transforms@^1.0.3:
     postcss "^5.0.8"
     postcss-value-parser "^3.0.1"
 
-postcss-selector-parser@^2.0.0, postcss-selector-parser@^2.2.2:
+postcss-replace-overflow-wrap@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-replace-overflow-wrap/download/postcss-replace-overflow-wrap-2.0.0.tgz#794db6faa54f8db100854392a93af45768b4e25b"
+  dependencies:
+    postcss "^6.0.1"
+
+postcss-selector-matches@^3.0.0, postcss-selector-matches@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/postcss-selector-matches/download/postcss-selector-matches-3.0.1.tgz#e5634011e13950881861bbdd58c2d0111ffc96ab"
+  dependencies:
+    balanced-match "^0.4.2"
+    postcss "^6.0.1"
+
+postcss-selector-not@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/postcss-selector-not/download/postcss-selector-not-3.0.1.tgz#2e4db2f0965336c01e7cec7db6c60dff767335d9"
+  dependencies:
+    balanced-match "^0.4.2"
+    postcss "^6.0.1"
+
+postcss-selector-parser@^2.0.0, postcss-selector-parser@^2.2.2, postcss-selector-parser@^2.2.3:
   version "2.2.3"
   resolved "http://r.cnpmjs.org/postcss-selector-parser/download/postcss-selector-parser-2.2.3.tgz#f9437788606c3c9acee16ffe8d8b16297f27bb90"
   dependencies:
     flatten "^1.0.2"
     indexes-of "^1.0.1"
     uniq "^1.0.1"
+
+postcss-simple-vars@^4.0.0:
+  version "4.0.0"
+  resolved "http://registry.npm.taobao.org/postcss-simple-vars/download/postcss-simple-vars-4.0.0.tgz#d49e082897d9a4824f2268fa91d969d943e2ea76"
+  dependencies:
+    postcss "^6.0.1"
 
 postcss-svgo@^2.1.1:
   version "2.1.6"
@@ -5122,7 +5689,7 @@ postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0
     source-map "^0.5.6"
     supports-color "^3.2.3"
 
-postcss@^6.0.1, postcss@^6.0.2, postcss@^6.0.6:
+postcss@^6.0.0, postcss@^6.0.1, postcss@^6.0.2, postcss@^6.0.3, postcss@^6.0.5, postcss@^6.0.6, postcss@^6.0.8:
   version "6.0.8"
   resolved "http://r.cnpmjs.org/postcss/download/postcss-6.0.8.tgz#89067a9ce8b11f8a84cbc5117efc30419a0857b3"
   dependencies:
@@ -5163,6 +5730,10 @@ pretty-format@^20.0.3:
 private@^0.1.6:
   version "0.1.7"
   resolved "http://r.cnpmjs.org/private/download/private-0.1.7.tgz#68ce5e8a1ef0a23bb570cc28537b5332aba63ef1"
+
+process-es6@^0.11.3:
+  version "0.11.6"
+  resolved "http://registry.npm.taobao.org/process-es6/download/process-es6-0.11.6.tgz#c6bb389f9a951f82bd4eb169600105bd2ff9c778"
 
 process-nextick-args@~1.0.6:
   version "1.0.7"
@@ -5368,6 +5939,17 @@ react-jss@^7.0.2:
     prop-types "^15.5.8"
     theming "^1.1.0"
 
+react-redux@^5.0.6:
+  version "5.0.6"
+  resolved "http://registry.npm.taobao.org/react-redux/download/react-redux-5.0.6.tgz#23ed3a4f986359d68b5212eaaa681e60d6574946"
+  dependencies:
+    hoist-non-react-statics "^2.2.1"
+    invariant "^2.0.0"
+    lodash "^4.2.0"
+    lodash-es "^4.2.0"
+    loose-envify "^1.1.0"
+    prop-types "^15.5.10"
+
 react-scripts@1.0.11:
   version "1.0.11"
   resolved "http://r.cnpmjs.org/react-scripts/download/react-scripts-1.0.11.tgz#483d49e27f417ec981ae415a4456120a2a2bc8c1"
@@ -5538,7 +6120,7 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
-reduce-css-calc@^1.2.6:
+reduce-css-calc@^1.2.6, reduce-css-calc@^1.2.7:
   version "1.3.0"
   resolved "http://r.cnpmjs.org/reduce-css-calc/download/reduce-css-calc-1.3.0.tgz#747c914e049614a4c9cfbba629871ad1d2927716"
   dependencies:
@@ -5546,7 +6128,14 @@ reduce-css-calc@^1.2.6:
     math-expression-evaluator "^1.2.14"
     reduce-function-call "^1.0.1"
 
-reduce-function-call@^1.0.1:
+reduce-css-calc@^2.0.0:
+  version "2.0.5"
+  resolved "http://registry.npm.taobao.org/reduce-css-calc/download/reduce-css-calc-2.0.5.tgz#33c97838c5d4c711a5c14ef85ce4fde41483f7bd"
+  dependencies:
+    css-unit-converter "^1.1.1"
+    postcss-value-parser "^3.3.0"
+
+reduce-function-call@^1.0.1, reduce-function-call@^1.0.2:
   version "1.0.2"
   resolved "http://r.cnpmjs.org/reduce-function-call/download/reduce-function-call-1.0.2.tgz#5a200bf92e0e37751752fe45b0ab330fd4b6be99"
   dependencies:
@@ -5685,6 +6274,10 @@ require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "http://r.cnpmjs.org/require-main-filename/download/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
 
+require-relative@^0.8.7:
+  version "0.8.7"
+  resolved "http://registry.npm.taobao.org/require-relative/download/require-relative-0.8.7.tgz#7999539fc9e047a37928fa196f8e1563dabd36de"
+
 require-uncached@^1.0.3:
   version "1.0.3"
   resolved "http://r.cnpmjs.org/require-uncached/download/require-uncached-1.0.3.tgz#4e0d56d6c9662fd31e43011c4b95aa49955421d3"
@@ -5695,6 +6288,10 @@ require-uncached@^1.0.3:
 requires-port@1.0.x, requires-port@1.x.x:
   version "1.0.0"
   resolved "http://r.cnpmjs.org/requires-port/download/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
+
+reserved-words@^0.1.1:
+  version "0.1.1"
+  resolved "http://registry.npm.taobao.org/reserved-words/download/reserved-words-0.1.1.tgz#6f7c15e5e5614c50da961630da46addc87c0cef2"
 
 resolve-dir@^1.0.0:
   version "1.0.1"
@@ -5711,7 +6308,7 @@ resolve@1.1.7:
   version "1.1.7"
   resolved "http://r.cnpmjs.org/resolve/download/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
-resolve@^1.2.0, resolve@^1.3.2:
+resolve@^1.1.6, resolve@^1.1.7, resolve@^1.2.0, resolve@^1.3.2:
   version "1.4.0"
   resolved "http://r.cnpmjs.org/resolve/download/resolve-1.4.0.tgz#a75be01c53da25d934a98ebd0e4c4a7312f92a86"
   dependencies:
@@ -5723,6 +6320,14 @@ restore-cursor@^2.0.0:
   dependencies:
     onetime "^2.0.0"
     signal-exit "^3.0.2"
+
+rgb-hex@^2.1.0:
+  version "2.1.0"
+  resolved "http://registry.npm.taobao.org/rgb-hex/download/rgb-hex-2.1.0.tgz#c773c5fe2268a25578d92539a82a7a5ce53beda6"
+
+rgb@~0.1.0:
+  version "0.1.0"
+  resolved "http://registry.npm.taobao.org/rgb/download/rgb-0.1.0.tgz#be27b291e8feffeac1bd99729721bfa40fc037b5"
 
 right-align@^0.1.1:
   version "0.1.3"
@@ -5742,6 +6347,94 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
   dependencies:
     hash-base "^2.0.0"
     inherits "^2.0.1"
+
+rollup-plugin-babel@^3.0.1:
+  version "3.0.1"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-babel/download/rollup-plugin-babel-3.0.1.tgz#e1b75bc3a6ea876bb8ec747562b344b15e27c94e"
+  dependencies:
+    rollup-pluginutils "^1.5.0"
+
+rollup-plugin-commonjs@^8.1.0:
+  version "8.1.0"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-commonjs/download/rollup-plugin-commonjs-8.1.0.tgz#8ac9a87e6ea4c0d136e3e0e25ef41058957622b0"
+  dependencies:
+    acorn "^4.0.1"
+    estree-walker "^0.3.0"
+    magic-string "^0.19.0"
+    resolve "^1.1.7"
+    rollup-pluginutils "^2.0.1"
+
+rollup-plugin-image@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-image/download/rollup-plugin-image-1.0.2.tgz#77c6782daedebee6e0a858c4017905846919da2a"
+  dependencies:
+    rollup-pluginutils "^1.3.1"
+
+rollup-plugin-node-globals@^1.1.0:
+  version "1.1.0"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-node-globals/download/rollup-plugin-node-globals-1.1.0.tgz#7efd8d611d132737829e804e9f51f50962af451f"
+  dependencies:
+    acorn "^4.0.1"
+    buffer-es6 "^4.9.1"
+    estree-walker "^0.2.1"
+    magic-string "^0.16.0"
+    process-es6 "^0.11.3"
+    rollup-pluginutils "^1.5.2"
+
+rollup-plugin-node-resolve@^3.0.0:
+  version "3.0.0"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-node-resolve/download/rollup-plugin-node-resolve-3.0.0.tgz#8b897c4c3030d5001277b0514b25d2ca09683ee0"
+  dependencies:
+    browser-resolve "^1.11.0"
+    builtin-modules "^1.1.0"
+    is-module "^1.0.0"
+    resolve "^1.1.6"
+
+rollup-plugin-postcss@^0.5.4:
+  version "0.5.4"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-postcss/download/rollup-plugin-postcss-0.5.4.tgz#c6cac59047a0abcc49811090c5582a8ed4e42be5"
+  dependencies:
+    chalk "^1.1.3"
+    concat-with-sourcemaps "^1.0.4"
+    fs-extra "^3.0.1"
+    postcss "^6.0.1"
+    reserved-words "^0.1.1"
+    rollup-pluginutils "^2.0.1"
+    style-inject "^0.1.0"
+
+rollup-plugin-replace@^1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-replace/download/rollup-plugin-replace-1.1.1.tgz#396315ded050a6ce43b9518a886a3f60efb1ea33"
+  dependencies:
+    magic-string "^0.15.2"
+    minimatch "^3.0.2"
+    rollup-pluginutils "^1.5.0"
+
+rollup-plugin-uglify@^2.0.1:
+  version "2.0.1"
+  resolved "http://registry.npm.taobao.org/rollup-plugin-uglify/download/rollup-plugin-uglify-2.0.1.tgz#67b37ad1efdafbd83af4c36b40c189ee4866c969"
+  dependencies:
+    uglify-js "^3.0.9"
+
+rollup-pluginutils@^1.3.1, rollup-pluginutils@^1.5.0, rollup-pluginutils@^1.5.2:
+  version "1.5.2"
+  resolved "http://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-1.5.2.tgz#1e156e778f94b7255bfa1b3d0178be8f5c552408"
+  dependencies:
+    estree-walker "^0.2.1"
+    minimatch "^3.0.2"
+
+rollup-pluginutils@^2.0.1:
+  version "2.0.1"
+  resolved "http://registry.npm.taobao.org/rollup-pluginutils/download/rollup-pluginutils-2.0.1.tgz#7ec95b3573f6543a46a6461bd9a7c544525d0fc0"
+  dependencies:
+    estree-walker "^0.3.0"
+    micromatch "^2.3.11"
+
+rollup@^0.45.2:
+  version "0.45.2"
+  resolved "http://registry.npm.taobao.org/rollup/download/rollup-0.45.2.tgz#63a284c2b31234656f24e9e9717fabb6a7f0fa43"
+  dependencies:
+    source-map-support "^0.4.0"
 
 run-async@^2.2.0:
   version "2.3.0"
@@ -5927,6 +6620,12 @@ signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "http://r.cnpmjs.org/signal-exit/download/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
 
+simple-swizzle@^0.2.2:
+  version "0.2.2"
+  resolved "http://registry.npm.taobao.org/simple-swizzle/download/simple-swizzle-0.2.2.tgz#a4da6b635ffcccca33f70d17cb92592de95e557a"
+  dependencies:
+    is-arrayish "^0.3.1"
+
 slash@^1.0.0:
   version "1.0.0"
   resolved "http://r.cnpmjs.org/slash/download/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
@@ -5977,13 +6676,13 @@ source-list-map@^2.0.0:
   version "2.0.0"
   resolved "http://r.cnpmjs.org/source-list-map/download/source-list-map-2.0.0.tgz#aaa47403f7b245a92fbc97ea08f250d6087ed085"
 
-source-map-support@^0.4.2:
+source-map-support@^0.4.0, source-map-support@^0.4.2:
   version "0.4.15"
   resolved "http://r.cnpmjs.org/source-map-support/download/source-map-support-0.4.15.tgz#03202df65c06d2bd8c7ec2362a193056fef8d3b1"
   dependencies:
     source-map "^0.5.6"
 
-source-map@0.5.6, source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
+source-map@0.5.6, source-map@0.5.x, source-map@^0.5.0, source-map@^0.5.1, source-map@^0.5.3, source-map@^0.5.6, source-map@~0.5.1, source-map@~0.5.3:
   version "0.5.6"
   resolved "http://r.cnpmjs.org/source-map/download/source-map-0.5.6.tgz#75ce38f52bf0733c5a7f0c118d81334a2bb5f412"
 
@@ -6175,6 +6874,10 @@ strip-indent@^1.0.1:
 strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "http://r.cnpmjs.org/strip-json-comments/download/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
+
+style-inject@^0.1.0:
+  version "0.1.2"
+  resolved "http://registry.npm.taobao.org/style-inject/download/style-inject-0.1.2.tgz#664127b65f40e5181a47e713b4c476002b7274ff"
 
 style-loader@0.18.2:
   version "0.18.2"
@@ -6415,7 +7118,7 @@ ua-parser-js@^0.7.9:
   version "0.7.14"
   resolved "http://r.cnpmjs.org/ua-parser-js/download/ua-parser-js-0.7.14.tgz#110d53fa4c3f326c121292bbeac904d2e03387ca"
 
-uglify-js@3.0.x, uglify-js@^3.0.13:
+uglify-js@3.0.x, uglify-js@^3.0.13, uglify-js@^3.0.9:
   version "3.0.27"
   resolved "http://r.cnpmjs.org/uglify-js/download/uglify-js-3.0.27.tgz#a97db8c8ba6b9dba4e2f88d86aa9548fa6320034"
   dependencies:
@@ -6460,6 +7163,13 @@ uniqid@^4.0.0:
 uniqs@^2.0.0:
   version "2.0.0"
   resolved "http://r.cnpmjs.org/uniqs/download/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
+
+units-css@^0.4.0:
+  version "0.4.0"
+  resolved "http://registry.npm.taobao.org/units-css/download/units-css-0.4.0.tgz#d6228653a51983d7c16ff28f8b9dc3b1ffed3a07"
+  dependencies:
+    isnumeric "^0.2.0"
+    viewport-dimensions "^0.2.0"
 
 universalify@^0.1.0:
   version "0.1.1"
@@ -6528,6 +7238,10 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
+user-home@^1.1.1:
+  version "1.1.1"
+  resolved "http://registry.npm.taobao.org/user-home/download/user-home-1.1.1.tgz#2b5be23a32b63a7c9deb8d0f28d485724a3df190"
+
 util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "http://r.cnpmjs.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
@@ -6558,6 +7272,12 @@ uuid@^3.0.0:
   version "3.1.0"
   resolved "http://r.cnpmjs.org/uuid/download/uuid-3.1.0.tgz#3dd3d3e790abc24d7b0d3a034ffababe28ebbc04"
 
+v8flags@^2.0.10:
+  version "2.1.1"
+  resolved "http://registry.npm.taobao.org/v8flags/download/v8flags-2.1.1.tgz#aab1a1fa30d45f88dd321148875ac02c0b55e5b4"
+  dependencies:
+    user-home "^1.1.1"
+
 validate-npm-package-license@^3.0.1:
   version "3.0.1"
   resolved "http://r.cnpmjs.org/validate-npm-package-license/download/validate-npm-package-license-3.0.1.tgz#2804babe712ad3379459acfbe24746ab2c303fbc"
@@ -6580,6 +7300,14 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+viewport-dimensions@^0.2.0:
+  version "0.2.0"
+  resolved "http://registry.npm.taobao.org/viewport-dimensions/download/viewport-dimensions-0.2.0.tgz#de740747db5387fd1725f5175e91bac76afdf36c"
+
+vlq@^0.2.1:
+  version "0.2.2"
+  resolved "http://registry.npm.taobao.org/vlq/download/vlq-0.2.2.tgz#e316d5257b40b86bb43cb8d5fea5d7f54d6b0ca1"
 
 vm-browserify@0.0.4:
   version "0.0.4"

@@ -35,7 +35,7 @@ export default class Cd extends React.Component{
                 'playing':this.props.isPlaying
             });
         return(
-            <div className="cd-container">
+            <div className="cd-container" ref={this.props.cdContainerRef}>
                 <Grid container spacing={0}>
                      <Grid item xs >
                         <div className={coverClass}>
